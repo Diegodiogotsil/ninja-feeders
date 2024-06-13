@@ -7,7 +7,7 @@ const mysql = require('mysql');
 //     password:'',
 //     database:'restoredhome'
 //   });
-  
+
 //   //Manter a conexão viva em caso de não poder abrir e fechar a conexão manualmente
 //   function keepAlive() {
 //     connection.ping((err) => {
@@ -18,10 +18,10 @@ const mysql = require('mysql');
 //       }
 //     });
 //   }
-  
+
 //   // Enviar um ping a cada 15 minutos (900000 milissegundos) mantendo a conexão aberta no caso de o servidor de banco de dados ter um timeOut
 //   setInterval(keepAlive, 9000);
-  
+
 //   connection.connect((err) => {
 //     if (err) {
 //       console.error('Erro ao conectar ao banco de dados:', err);
@@ -29,7 +29,7 @@ const mysql = require('mysql');
 //     }
 //     console.log('Conexão bem-sucedida com o banco de dados MySQL.');
 //   });
-  
+
 //   module.exports = connection;
 
 
@@ -44,6 +44,7 @@ const createConnection = () => {
         user: 'root',
         password:'',
         database:'ninjafeeders',
+        port:3307,
     connectTimeout: 10000 // Tempo limite para a conexão em milissegundos (opcional)
   });
 };
