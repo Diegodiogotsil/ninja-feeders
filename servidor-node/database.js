@@ -44,7 +44,6 @@ const createConnection = () => {
         user: 'root',
         password:'',
         database:'ninjafeeders',
-        port:3307,
     connectTimeout: 10000 // Tempo limite para a conexão em milissegundos (opcional)
   });
 };
